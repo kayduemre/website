@@ -24,6 +24,7 @@ from members.views import MembersPage
 from main.views import MainPage
 from rover.views import RoverPage
 from sponsors.views import SponsorsPage
+from old_rover.views import OldRoverPage
 
 urlpatterns = [
     path('manage/', admin.site.urls),
@@ -34,6 +35,7 @@ urlpatterns = [
     path('rover/', RoverPage.as_view(), name='rover'),
     path('destek-ol/', MembersPage.as_view(), name='support'),
     path('medya/', MembersPage.as_view(), name='media'),
+    path('Eski roverlar',OldRoverPage.as_view(), name='oldrover'),
 ]
 
 if settings.DEBUG:
